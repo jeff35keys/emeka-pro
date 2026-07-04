@@ -1,0 +1,146 @@
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 0;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-brand h1 {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  margin: 5px 0;
+  background: white;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.nav-link.admin {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.register-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+.user-menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-left: 30px;
+  padding-left: 30px;
+  border-left: 1px solid #555;
+}
+
+.user-name {
+  color: white;
+}
+
+.logout-btn {
+  background-color: var(--danger-color);
+  color: white;
+  padding: 8px 16px;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand h1 {
+    font-size: 18px;
+    max-width: 230px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    margin-top: 15px;
+    padding: 15px 0 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .nav-link,
+  .register-btn,
+  .logout-btn {
+    width: 100%;
+    text-align: left;
+  }
+
+  .user-menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+}

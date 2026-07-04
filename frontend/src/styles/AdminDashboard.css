@@ -1,0 +1,141 @@
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.admin-dashboard h1 {
+  margin-bottom: 40px;
+  color: var(--dark-color);
+  font-size: 36px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  border-top: 4px solid var(--primary-color);
+}
+
+.dashboard-card h3 {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.dashboard-card .value {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.section {
+  background: white;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: var(--dark-color);
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+}
+
+.stat-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-box {
+  padding: 20px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.stat-box.completed {
+  background-color: var(--secondary-color);
+}
+
+.stat-box.pending {
+  background-color: var(--warning-color);
+  color: #333;
+}
+
+.stat-box.cancelled {
+  background-color: var(--danger-color);
+}
+
+.stat-box h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.stat-box p {
+  font-size: 28px;
+  margin: 0;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.stats-table th {
+  background-color: var(--light-color);
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+}
+
+.stats-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.stats-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.link-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.link-btn:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}

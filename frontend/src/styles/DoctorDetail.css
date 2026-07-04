@@ -1,0 +1,77 @@
+.doctor-detail-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.doctor-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.doctor-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.doctor-header .specialization {
+  font-size: 18px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.doctor-header .rating {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.doctor-info {
+  display: grid;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.info-section {
+  background: white;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.info-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.info-section p {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.info-section p strong {
+  color: var(--dark-color);
+}
+
+.book-btn {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 15px 40px;
+  border-radius: var(--border-radius);
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.book-btn:hover {
+  background-color: #218838;
+  text-decoration: none;
+}
